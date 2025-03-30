@@ -397,7 +397,7 @@ public class ArrayExample {
     }
 }
 
-output: 4s
+output: 4
 
 
 
