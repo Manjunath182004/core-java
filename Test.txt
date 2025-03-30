@@ -1,0 +1,427 @@
+1.
+
+i) Variables : Variables are containers to store the values In java
+
+   Syntax:  Datatype variableName = value;
+
+   Example : byte age = 21;
+             System.out.println(age);
+
+ii) List of datatypes In java:
+        1. byte
+        2. short
+        3. int
+        4. long
+        5. float
+        6. double
+        7. char
+        8. Boolean
+
+Examples: 
+
+byte month = 12;
+System.out.println(months);
+
+short daysInYear = 365;
+System.out.println(daysInYear);
+
+int prizeOfBike = 70000;
+System.out.println(prizeOfBike);
+
+long adharNo = 4587372812792L;
+System.out.println(adharNo);
+
+float denisityOfWater = 8.5f;
+System.out.println(denisityOfWater);
+
+double weight = 100.455d;
+System.out.println(weight);
+
+char aplbhabets = 'A';
+System.out.println(alphabets);
+
+Boolean isJavaEasy = false;
+System.out.println(isJavaEasy);
+
+
+iii).
+
+Difference b/w primitive and Non-primitive datatype
+
+primitive datatype = this datatypes built in datatypes in java
+
+Example : int, Boolean etc...
+
+Non-primitive datatype : this are built-in and User and user defined datatype in Java
+
+Example: String, Arrays, etc....
+
+
+iv). 
+
+int x = 10;
+double y = x;
+System.out.println(y);
+
+output: 10.0
+
+v). default value of uninitialized integer 
+    --> default value be the 0;
+
+    default value of uninitialized Boolean
+    --> default value be the false;
+
+-------------------------------------------------------------------------------------------
+
+2).
+
+i). Method: Method is Block of Code which is Executed Whenever it is called 
+
+purpose of Method: Method are Mostly used in Java Because To Reusability of The Code
+
+Example: 
+
+public class Method(){
+
+  public static void main(String[] args){
+
+   lightOn();
+   lightOff();
+
+  }
+   
+   public static void lightOn(){
+    System.out.println("Please On the Light");
+   }
+
+   public static void lightOff(){
+    System.out.println("Please Off the Light");
+   }
+ 
+}
+
+
+ii). Write a Java method that takes two integers as parameters and returns their sum.
+
+
+public class Sum(){
+
+   public static void main(String[] args){
+
+   int result = addValue(10,20);
+   System.out.println("added Value be the: " + result);
+
+
+   }
+
+   public static int addValue(int value1, int value2){
+
+   return value1 + value2;
+
+   }
+}
+
+iii).
+
+difference B/w Void and Non-Void Methods in Java
+
+void Methods : in java if we use Void method in java then the Method doesn't return any Value 
+
+example : 
+
+public class Method(){
+
+  public static void main(String[] args){
+
+   message();
+
+  }
+   
+   public static void message(){
+    System.out.println("Sending Message To Abhijeet");
+   } 
+
+}
+
+
+Non-Void Method(Returntype): in java if use non-void Method then its should specified return value(ex: int, float, String etc..)
+
+example:
+
+public class Sum(){
+
+   public static void main(String[] args){
+
+   int result = addValue("L", "MANJUNATHA");
+   System.out.println("Full Name be the: " + result);
+
+
+   }
+
+   public static String addValue(String fname, String lname){
+
+   String add = fname + lname;
+
+   return add;
+
+   }
+}
+
+
+iv). 
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(getValue());
+    }
+
+    static int getValue() {
+        return 20;
+    }
+}
+
+
+output : 20
+
+
+v). Method Overloading: In Java Method Overloading is Defined has Having the same Method Name but difference in Parameter
+
+public class Calculator{
+
+    public static void main(String[] args) {
+
+    Calculator cal = new Calculator();
+
+    System.out.println(cal.add(3,4));
+    System.out.println(cal.add(6,4, 7));
+    System.out.println(cal.add(3,4));
+    System.out.println(cal.add(3.5d, 5.8d));
+   
+        
+    }
+
+    public static int add(int a, int b){
+     return a + b;
+    }
+
+    public static int add(int a, int b, int c){
+     return a + b + c;
+    }
+
+    public static int add(int a, int b){
+     return a - b;
+    }
+
+     public static double add(double a, double b){
+      return a + b;
+    }
+}
+
+
+vi).
+
+its Shows an error that is Compilation error
+
+-------------------------------------------------------------------------------------------
+
+
+3).
+
+i). Parameters: Parameters are the Variables That are Declared in the brackets in Methods
+
+parameter are used in Method because the Reusability of Code, Solve The Complexity of Code
+etc...
+
+ii). difference between pass-by-value and pass-by-reference
+
+
+pass-by-value : 
+
+pass-by-reference:
+
+iii). 
+
+public class Test {
+    public static void modify(int a, int[] arr) {
+        a = a + 5;
+        arr[0] = arr[0] + 5;
+        System.out.println("Inside modify method: a = " + a + ", arr[0] = " + arr[0]);
+    }
+
+    public static void main(String[] args) {
+        int num = 10;
+        int[] numbers = {20, 30, 40};
+
+        modify(num, numbers);
+        System.out.println("After modify method: num = " + num + ", numbers[0] = " + numbers[0]);
+    }
+}
+
+output: 40
+
+iv). No Method Can return Only one Value 
+     But we can return multiple values Indirectly by using arrays, class and objects etc...
+
+
+v). 
+
+
+4).
+
+i). Array : Array is a Collection of Values With Similar Types
+
+Array is Different from Normal Variable because we can store only one value in Variables but in Array we can store multiple values with similar types...
+
+Ex: char alphabets = 'A';
+    char[] alphabets = {'A','B','C','D','E','F','G'}
+
+
+ii).
+
+
+public class Test {
+    public static void main(String[] args) {
+
+    int[] ages = {10,20,30,40,50,60,70};
+
+    ages[3] = 80;
+
+    System.out.println(ages[0]);
+    System.out.println(ages[1]);
+    System.out.println(ages[2]);
+    System.out.println(ages[3]);
+    System.out.println(ages[4]);
+    System.out.println(ages[5]);
+    System.out.println(ages[6]);
+
+     
+    }
+}
+
+
+iii). Write a Java program to find the maximum element in an integer array.
+
+iv). 
+
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(arr[2]);
+    }
+}
+
+output: 3
+
+v).Write a Java program to reverse an array without using an additional array.
+
+vi).  How do you find the sum of all elements in an array using a loop?
+
+
+public class Test {
+    public static void main(String[] args) {
+
+    int[] ages = {10,20,30,40,50,60,70};
+
+    int values = adages(ages);
+    System.out.println(values);
+    
+  
+    }
+
+    public static int adages(int[] ages){
+      
+ 
+    int total = 0;   
+    for(int i = 0; i > ages.length; i++){
+       total = total + ages[i]; 
+    }
+    return total;
+    
+   }
+}
+
+Find The o/p of The Following: 
+
+
+1. 
+
+public class Test {
+    public static int calculate(int a, int b) {
+        return a + b * 2;
+    }
+    public static void main(String[] args) {
+        System.out.println(calculate(2, 3));
+    }
+}
+
+output: 8
+
+2. 
+
+public class LoopTest {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        for (int i = 0; i < arr.length; i += 2) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+
+output: 1 3 5
+
+3.
+
+public class MethodTest {
+    static void display(int a, int b) {
+        a += 5;
+        b *= 2;
+        System.out.println(a + " " + b);
+    }
+    public static void main(String[] args) {
+        int x = 3, y = 4;
+        display(x, y);
+        System.out.println(x + " " + y);
+    }
+}
+
+output: 8 8  and 3 4
+      
+
+4. 
+
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[][] matrix = {{1, 2}, {3, 4}};
+        System.out.println(matrix[1][1]);
+    }
+}
+
+output: 4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+ 
+
+
+   
