@@ -1,0 +1,154 @@
+1. Class In java : Classes The are The Blueprints for creating an objects.
+   
+   it differ from object like, Where the Classes are The Blue Prints For Creating on objects 
+   But in Objects are have States and Behaviours.
+
+2. Constructor : Constructor in Java is Defined as the "Is a Block of Executed Whenever
+   an object Is created".
+   
+   Constructor are differ From Methods 
+   - Where Method Is Block Of Code Executed When its Called  
+   - Where Constructor Block of code Executed During Object Creation
+ 
+Main difference: 1. Method are Create With Return Types and Without Return Types
+                 2. But Constructor Should not have an Return Type
+                 3. Method name should be any type or any value
+                 4. Constructor name Should Same as Class Name
+                 5. Without Constructor we cannot create an object
+
+3. Types Of Constructor 
+   i) default Constructor: is Constructor Where an Compiler(In Java) Will Automatically 
+      Suggest for create Constructor, If You not created Constructor.
+  
+   ii) No Parameter Constructor: This is Type of Constructor in java Where Constructor 
+       are Created Without parameter in its
+
+   iii) Parameter Constructor: This is Type of Constructor in java Where Constructor 
+       are Created With parameter in its.
+
+4. Yes, a Constructor can be private in Java 
+   This private Constructor are created Because to stop the other classes to creating 
+   the Objects.
+
+5. Aggregation : Aggregation in java is defined as " is Type of Relationship in Java
+   (Has a relation) Where Class Connected Through reference to another class".
+
+Example : School has Teachers, School has rooms, School as Sections, School as Security.
+
+
+6. Inheritance : is defined in Java as "Acquiring(Inherit) all The Properties from the                Parent Class to Child Class".
+
+Use of Inheritance In java:
+
+--> For Reuse the Code(write once and Reuse) from one class to another class
+--> and we also create Method Overloading and Method Overriding(Polymorphism).
+
+7. There are Three Types that are Supported Inheritance in Java
+   1. Single Inheritance
+   2. Multilevel Inheritance
+   3. Hierarchical Inheritance
+
+8. Super Keyword are use In inheritance because:
+   --> access all the values of parent classes(Method, Variables, Constructors).
+   -->  and it allows the child class to access all the values of parent class
+   --> We can also called the constructor(parent) to constructor of another class(child).
+
+
+9. Java Doesn't Support Multiple Inheritance In java, 
+   Reason:  -->In Inheritance(java) Using Extend Keyword is not Possible.
+            -->Because The In inheritance Using extend Keyword its only possible by 
+               achieving the Extend Keyword that from one parent another child class
+            --> This are get by using interfaces in java
+
+
+10. Static Variables : Static Variables in java are Defined as "this are the Variables 
+    are declared by using static keyword in java".
+
+differ :  Where Static variables shared among all objects of classes but there only 
+          one copy.
+          Where instance Variables are  unique to each object it has own copy.
+
+
+11. Static Variables are Stored in the Method area in the class,
+    this are created  only one time.
+    but there are not stored in heap memory
+
+12. Static Block : is defined as static block is a block of code in java
+    that runs one time when the class been executed.
+
+---> its Executed the Before the Executing the main Method in java
+
+13. "YES", In java Multiple static Blocks can have in class
+    --->They are Executed in order Wise as they appear in the code like first block   executed later second block.
+
+
+14. Use of Static Block:
+    --> used for initializing values for the static variables 
+    --> To run the program once
+
+
+15. Why main Method Is static in java:
+    --> Because in java JVM calls the method Without using or creating the objects. 
+   --> Because the code start from main Method Only.
+   --> JVM directly calls to main Method Only
+   
+
+Outputs Of the Following Code:
+
+1. Class and Objects: 
+
+output: 15
+
+
+2. Constructors:
+
+output: default Constructor
+
+
+3. Association:
+
+output: 8
+        4
+
+
+4. Access Specifiers:
+
+output: 10
+        20
+
+5.Static Methods:
+
+
+output: parent static
+
+6. Static Variables:
+
+
+output: 3
+
+7. Static Block 
+ 
+output: Value: 50
+
+
+8. Inheritance:
+
+output: Dog runs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
